@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px){
+    .hbdTitle{
+        font-size: 3em;
+        font-weight: bold;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .giff{
+        width: 100vw;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .raizaPhoto{
+        margin-left: auto;
+        height: 100vh;
+        position:absolute;
+        top: 0;
+        right: 0;
+    }
+}
