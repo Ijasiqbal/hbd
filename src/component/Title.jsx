@@ -4,6 +4,7 @@ import styles from './Title.module.css';
 import popping from '../assets/popping.gif';
 import { useEffect, useState } from "react";
 import bgRemoved from '../assets/bgRemoved.png';
+import Typewriter from 'typewriter-effect';
 
 const Title = () => {
     const [showImage, setShowImage] = useState(false);
@@ -21,16 +22,27 @@ const Title = () => {
     return ( 
         <div className={styles.base}>
             <div className={styles.hbdTitle}>
-            <ReactTyped
-            startWhenVisible
-              strings={[
-                "Happy Birthday Raiza",
-              ]}
-              typeSpeed={150}
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString('Happy Birthday Raiza!')
+                  .pauseFor(2500)
+                  .deleteChars(6)
+                  .typeString('loose')
+                  .pauseFor(2500)
+                  .deleteChars(5)
+                  .typeString('Raizuu')
+                  .pauseFor(2500)
+                  .start();
+              }}
+              options={
+                {
+                  loop: true,
+                }
+              }
             />
             </div>
             {showImage && <img src={popping} alt="popping" className={styles.giff} />}
-            <img src={bgRemoved} alt="raizaPhoto" className={`animate__animated animate__fadeInLeft animate__slower ${styles.raizaPhoto}`} />
+            <img src={bgRemoved} alt="raizaPhoto" className={`animate__delay-5s  animate__animated animate__zoomIn  ${styles.raizaPhoto}`} />
        </div>
      );
 }

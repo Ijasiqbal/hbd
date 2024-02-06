@@ -1,8 +1,8 @@
 
 :root {
-    --light: #A7C957; 
-    --normal: #6A994E;
-    --dark: #386641;
+    --light: #b49fcc; 
+    --normal: #6d466b;
+    --dark: #412234;
   }
 
 @media screen and (max-width: 768px){
@@ -28,7 +28,7 @@
     }
     .raizaPhoto{
         margin-left: auto;
-        height: 90vh;
+        height: 85vh;
         position:absolute;
         top: 0;
         right: 0;
