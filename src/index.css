@@ -3,3 +3,8 @@ body{
   padding: 0;
   
 }
+
+.animate__slower{
+  animation-duration: 2s;
+  animation-delay: 6s;
+}
