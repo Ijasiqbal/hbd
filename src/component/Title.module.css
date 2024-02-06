@@ -2,7 +2,7 @@
 :root {
     --light: #52B788; 
     --normal: #40916C;
-    --dark: #2D6A4F;
+    --dark: #1B4332;
   }
 
 @media screen and (max-width: 768px){
@@ -11,7 +11,7 @@
         height: 100vh;
     }
     .hbdTitle{
-        padding: 0 10vw;
+        padding: 0 15vw;
         font-size: 3em;
         font-weight: bold;
         padding-top: 50px;
