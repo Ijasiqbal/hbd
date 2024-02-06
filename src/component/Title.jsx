@@ -30,7 +30,7 @@ const Title = () => {
             />
             </div>
             {showImage && <img src={popping} alt="popping" className={styles.giff} />}
-            <img src={bgRemoved} alt="raizaPhoto" className={`${styles.raizaPhoto } animate__slideInLeft`} />
+            <img src={bgRemoved} alt="raizaPhoto" className={`animate__animated animate__fadeInLeft ${styles.raizaPhoto}`} />
        </div>
      );
 }
