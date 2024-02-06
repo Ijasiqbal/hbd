@@ -7,14 +7,16 @@ import bgRemoved from '../assets/bgRemoved.png';
 
 const Title = () => {
     const [showImage, setShowImage] = useState(false);
+    const [showPhoto, setShowPhoto] = useState(false);
 
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowImage(true);
             setTimeout(() => {
                 setShowImage(false);
+                setShowPhoto(true);
             }, 2000);
-        }, 4000);
+        }, 5000);
         return () => clearTimeout(timer); // Clear the timer if the component unmounts
     }, []); 
 
@@ -30,7 +32,7 @@ const Title = () => {
             />
             </div>
             {showImage && <img src={popping} alt="popping" className={styles.giff} />}
-            <img src={bgRemoved} alt="raizaPhoto" className={`animate__animated animate__fadeInLeft ${styles.raizaPhoto}`} />
+            {showPhoto && <img src={bgRemoved} alt="raizaPhoto" className={`animate__animated animate__fadeInLeft ${styles.raizaPhoto}`} />}
        </div>
      );
 }
