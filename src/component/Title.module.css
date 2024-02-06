@@ -1,6 +1,6 @@
 
 :root {
-    --light: #b49fcc; 
+    --light: #ead7d7; 
     --normal: #6d466b;
     --dark: #412234;
   }
@@ -11,7 +11,7 @@
         height: 100vh;
     }
     .hbdTitle{
-        padding: 0 9vw;
+        padding: 0 7vw;
         font-size: 3em;
         font-weight: bold;
         padding-top: 50px;
@@ -28,7 +28,7 @@
     }
     .raizaPhoto{
         margin-left: auto;
-        height: 85vh;
+        height: 90vh;
         position:absolute;
         top: 0;
         right: 0;
