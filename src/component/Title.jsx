@@ -1,3 +1,4 @@
+import 'animate.css';
 import { ReactTyped } from "react-typed";
 import styles from './Title.module.css';
 import popping from '../assets/popping.gif';
@@ -18,7 +19,7 @@ const Title = () => {
     }, []); 
 
     return ( 
-        <div>
+        <div className={styles.base}>
             <div className={styles.hbdTitle}>
             <ReactTyped
             startWhenVisible
@@ -29,7 +30,7 @@ const Title = () => {
             />
             </div>
             {showImage && <img src={popping} alt="popping" className={styles.giff} />}
-            <img src={bgRemoved} alt="raizaPhoto" className={styles.raizaPhoto} />
+            <img src={bgRemoved} alt="raizaPhoto" className={`${styles.raizaPhoto } animate__slideInLeft`} />
        </div>
      );
 }

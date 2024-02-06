@@ -1,9 +1,22 @@
+
+:root {
+    --light: #52B788; 
+    --normal: #40916C;
+    --dark: #2D6A4F;
+  }
+
 @media screen and (max-width: 768px){
+    .base{
+        background-color: var(--dark);
+        height: 100vh;
+    }
     .hbdTitle{
         font-size: 3em;
         font-weight: bold;
-        margin-top: 50px;
+        padding-top: 50px;
         text-align: center;
+        z-index: 1;
+        color: var(--light);
     }
     .giff{
         width: 100vw;
@@ -11,7 +24,6 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -1;
     }
     .raizaPhoto{
         margin-left: auto;

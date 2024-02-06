@@ -1,5 +1,7 @@
+import 'animate.css';
 import React from 'react';
 import Title from './component/Title';
+
 
 function App() {
 
