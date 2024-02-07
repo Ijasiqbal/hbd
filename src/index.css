@@ -1,4 +1,10 @@
 
+:root {
+  --light: #ead7d7; 
+  --normal: #6d466b;
+  --dark: #412234;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -9,4 +15,7 @@ body{
 .introGiff{
   height: 100vh;
   width: 100vw;
+}
+html{
+  scroll-snap-type: y mandatory;
 }

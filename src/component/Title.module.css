@@ -1,14 +1,10 @@
 
-:root {
-    --light: #ead7d7; 
-    --normal: #6d466b;
-    --dark: #412234;
-  }
 
 @media screen and (max-width: 768px){
     .base{
         background: linear-gradient(to bottom, var(--dark), var(--normal));
         height: 100vh;
+        scroll-snap-align: center;
     }
     .hbdTitle{
         padding: 0 7vw;
