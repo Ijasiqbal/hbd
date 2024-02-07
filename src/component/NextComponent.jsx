@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'; 
 import styles from './NextComponent.module.css';
-import Flow1 from '../assets/flow1.gif';
+import Flow1 from '../assets/Flow1.gif';
 
 const NextComponent = () => {
     const [showImage, setShowImage] = useState(false);
