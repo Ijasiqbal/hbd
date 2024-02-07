@@ -8,8 +8,12 @@ import Typewriter from 'typewriter-effect';
 
 const Title = () => {
     const [showImage, setShowImage] = useState(false);
+    const [showSheriyenna, setShowSheriyenna] = useState(false);
 
     useEffect(() => {
+        setTimeout(() => {
+            setShowSheriyenna(true);
+        }, 7000);
         const timer = setTimeout(() => {
             setShowImage(true);
             setTimeout(() => {

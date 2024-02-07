@@ -7,7 +7,7 @@
         scroll-snap-align: center;
     }
     .hbdTitle{
-        padding: 0 7vw;
+        padding: 0 5vw;
         font-size: 3em;
         font-weight: bold;
         padding-top: 50px;
@@ -28,5 +28,15 @@
         position:absolute;
         top: 0;
         right: 0;
+    }
+    .sheriyenna{
+        display: inline-block;
+        position:absolute;
+        color: var(--light);
+        border: 2px solid var(--light);
+        border-radius: 5px;
+        padding: 5px 10px;
+        top: 700px;
+        left: 40px;
     }
 }
