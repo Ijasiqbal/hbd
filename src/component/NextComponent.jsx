@@ -32,9 +32,15 @@ const NextComponent = () => {
             {showGif && <img src={Flow1} alt="flow1" className={styles.flow1} />}
             {showImage2 && <img src={frame1} alt="flow1" className={styles.flow1} />}
             <div className={styles.quote}>
-                <h4>Kulikkan lux</h4>
-                <h4>Thalel thekkan vicks</h4>
-                <h4>ninakku irikkatte oru birthday wish</h4>
+                <h4 className={clsx({
+                    'animate__animated animate__headShake': isActive
+                })}>Kulikkan lux</h4>
+                <h4 className={clsx({
+                    'animate__animated animate__headShake': isActive
+                })}>Thalel thekkan vicks</h4>
+                <h4 className={clsx({
+                    'animate__animated animate__headShake': isActive
+                })}>ninakku irikkatte oru birthday wish</h4>
             </div>
 
         </div>
